@@ -2,8 +2,8 @@ import subprocess
 import sys
 
 VERSIONS = [
-    ("flix.jar", "0.70", "results_v070.txt"),
-    ("old.jar",  "0.72", "results_v072.txt"),
+    ("flix070.jar", "0.70", "results_v070.txt"),
+    ("flix072.jar",  "0.72", "results_v072.txt"),
 ]
 
 SRC = [

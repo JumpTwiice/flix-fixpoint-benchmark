@@ -1,4 +1,3 @@
 *.jar
-data/
 results_*.txt
 crash_report_*.txt

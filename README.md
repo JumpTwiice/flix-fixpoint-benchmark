@@ -4,7 +4,7 @@ Mini-benchmark of Flix's fixpoint module.
 
 ## Dataset
 
-`data/road/road.csv` — California road network from [SNAP](https://snap.stanford.edu/data/roadNet-CA.html) consisting of ~2 million bidirectional edges.
+`data/road/road.csv` — California road network from [SNAP](https://snap.stanford.edu/data/roadNet-CA.html) consisting of almost 3 million bidirectional edges.
 
 Run `sample()` to produce the sampled input file before benchmarking.
 

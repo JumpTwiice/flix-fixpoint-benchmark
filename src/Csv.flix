@@ -13,8 +13,9 @@ mod Csv {
     pub def sampleFile(filename: String, n: Int32): Result[IoError, Unit] \ FileRead + WriteLines + Shuffle =
         forM (
             lines <- FileRead.readLines(filename);
-            sampled = List.shuffle(lines) |> List.take(n);
-            _ <- WriteLines.writeLines(lines = sampled, outputFilename(filename, n))
+            size = Int32.min(n, List.size(lines));
+            sampled = List.shuffle(lines) |> List.take(size);
+            _ <- WriteLines.writeLines(lines = sampled, outputFilename(filename, size))
         ) yield ()
 
     def outputFilename(filename: String, n: Int32): String =
